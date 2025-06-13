@@ -1,0 +1,124 @@
+/* css/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d8d8d8;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: linear-gradient(135deg, #6c5ce7, #00b894);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    color: #eeeeee;
+    margin-bottom: 0.4rem;
+    font-weight: 400;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2d3436;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all 0.3s ease, box-shadow 0.2s ease-in-out;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #636e72;
+    font-style: normal;
+    font-weight: 400;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #00cec9;
+    background-color: #ffffff;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.85rem;
+    background: linear-gradient(135deg, #79fd84, #41d641);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+    box-shadow: 0 8px 20px rgba(26, 129, 52, 0.5);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(26, 129, 52, 0.7);
+}
+
+.error {
+    margin-top: 1rem;
+    text-align: center;
+    color: #ffeaa7;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.extras {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.extras a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 0 0.3rem;
+}
+
+.extras .sep {
+    color: rgba(255,255,255,0.6);
+}
+
