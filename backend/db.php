@@ -1,5 +1,5 @@
 <?php
-$conexion= new PDO('mysql:host=localhost;port=3307;dbname=reportesurbanos', 'root', '');
+$conexion= new PDO('mysql:host=localhost;dbname=reportesurbanos', 'root', '');
 if (!$conexion) {
     die("Connection failed: " . $conexion->errorInfo());
 }else {
