@@ -1,5 +1,5 @@
 <?php
-require('db.php'); // Conexión PDO
+require('db.php'); 
 header('Content-Type: application/json');
 
 try {
